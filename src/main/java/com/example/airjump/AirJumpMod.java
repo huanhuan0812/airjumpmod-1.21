@@ -34,6 +34,9 @@ public class AirJumpMod implements ModInitializer, ClientModInitializer {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             // 检查按键是否按下
             while (airJumpKey.wasPressed()) {
+                if (getServerAdress.getIsBanned()){
+                    client.player.sendMessage(Text.translatable("text.warn.unable").formatted(Formatting.RED), true);
+                }
                 airJumpEnabled = !airJumpEnabled;
                 if (client.player != null) {
                     MutableText message = Text.translatable("message.airjump.toggle");

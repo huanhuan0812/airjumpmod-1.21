@@ -1,5 +1,6 @@
 {
   "key.airjump.toggle": "Toggle Air Jump",
   "category.airjump.keys": "Air Jump Mod",
-  "message.airjump.toggle": "Air Jump: "
+  "message.airjump.toggle": "Air Jump: ",
+  "text.warn.unable": "You are not allowed to use Air Jump in this server."
 }
